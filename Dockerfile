@@ -1,4 +1,8 @@
-FROM ubuntu:latest
-LABEL authors="tuanphanle"
+FROM openjdk:21
 
-ENTRYPOINT ["top", "-b"]
+VOLUME /tmp
+
+COPY target/*.jar RabbitService-0.0.1-SNAPSHOT.jar
+
+EXPOSE 8082
+ENTRYPOINT ["java","-jar","/RabbitService-0.0.1-SNAPSHOT.jar"]

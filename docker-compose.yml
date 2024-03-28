@@ -1,0 +1,10 @@
+version: "3.3"
+services:
+  login:
+    container_name: rabbit-services
+    image: coderbillzay/rabbit-services
+    ports:
+      - '8082:8082'
+    volumes:
+      - ./:/server
+    restart: always
