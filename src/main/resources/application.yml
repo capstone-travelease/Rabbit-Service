@@ -3,7 +3,7 @@ spring:
     port: 5672
     username: guest
     password: guest
-    host: 35.247.170.16
+    host: 34.126.137.107
   application:
     name: rabbitMQ-service
 
